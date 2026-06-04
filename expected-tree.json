@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "pm": "pip",
+  "pm_version_tested": "24.0",
+  "source_file": "https://github.com/mend-detection-qa/pip_constraints-txt-direct-dep/blob/main/requirements.txt",
+  "root": {
+    "name": "pip_constraints-txt-direct-dep",
+    "version": "0.0.0",
+    "dependencies": [
+      {
+        "name": "requests",
+        "version": "2.31.0",
+        "scope": "main",
+        "direct": true,
+        "mediation": "Pinned by Mend from constraints.txt (requests==2.31.0). requirements.txt lists `requests` without a version, so the constraint determines the resolved version.",
+        "dependencies": [
+          {
+            "name": "certifi",
+            "version": "2026.5.20",
+            "scope": "main",
+            "direct": false,
+            "dependencies": []
+          },
+          {
+            "name": "charset-normalizer",
+            "version": "3.4.7",
+            "scope": "main",
+            "direct": false,
+            "dependencies": []
+          },
+          {
+            "name": "idna",
+            "version": "3.18",
+            "scope": "main",
+            "direct": false,
+            "dependencies": []
+          },
+          {
+            "name": "urllib3",
+            "version": "2.7.0",
+            "scope": "main",
+            "direct": false,
+            "dependencies": []
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "total_packages": 5,
+    "direct_dependencies": 1,
+    "transitive_dependencies": 4,
+    "constraint_applied": "requests==2.31.0 via constraints.txt (DIRECT dep, not transitive)",
+    "scopes_included": ["main"],
+    "notes": "Pip mirror of uv_constraints-txt-direct-dep. requirements.txt deliberately declares `requests` without a version so the constraint is the deciding pin."
+  }
+}
